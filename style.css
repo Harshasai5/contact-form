@@ -1,0 +1,143 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Full screen background */
+body {
+  min-height: 100vh;
+  padding: 1rem;
+  background: linear-gradient(to top right, #20002c, #cbb4d4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('sunset.avif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Form Container */
+form {
+  background: rgba(0, 0, 0, 0.75);
+  padding: 3rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 600px;        /* Increased width */
+  min-height: 550px;       /* Increased height */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Heading */
+form h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+/* Input fields */
+form input,
+form textarea {
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem 0;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  resize: vertical;
+}
+
+/* Button */
+form button {
+  width: 100%;
+  padding: 1rem;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background: white;
+  color: black;
+}
+
+/* Message Styles */
+.error,
+.success {
+  font-size: 1rem;
+  margin-top: 0.75rem;
+  text-align: center;
+}
+.error {
+  color: #ff4d4d;
+}
+.success {
+  color: #4caf50;
+}
+
+/* Responsive Design */
+
+/* Tablets */
+@media (max-width: 768px) {
+  body {
+    padding: 1.5rem;
+  }
+
+  form {
+    padding: 2rem;
+    max-width: 90%;
+    min-height: 500px;
+  }
+
+  form h2 {
+    font-size: 1.6rem;
+  }
+
+  form input,
+  form textarea,
+  form button {
+    font-size: 1rem;
+    padding: 0.9rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  body {
+    padding: 1rem;
+    align-items: flex-start;
+  }
+
+  form {
+    padding: 1.5rem;
+    max-width: 100%;
+    min-height: 480px;
+  }
+
+  form h2 {
+    font-size: 1.4rem;
+  }
+
+  form input,
+  form textarea,
+  form button {
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+}
+
